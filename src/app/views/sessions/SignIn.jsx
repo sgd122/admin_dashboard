@@ -90,7 +90,7 @@ class SignIn extends Component {
                       name="agreement"
                       onChange={this.handleChange}
                       control={<Checkbox checked />}
-                      label="I have read and agree to the terms of service."
+                      label="서비스 약관을 읽었으며 이에 동의합니다."
                     />
                     <div className="flex flex-wrap items-center mb-4">
                       <div className={classes.wrapper}>
@@ -100,7 +100,7 @@ class SignIn extends Component {
                           disabled={this.props.login.loading}
                           type="submit"
                         >
-                          Sign in to Enter Dashboard
+                          로그인
                         </Button>
                         {this.props.login.loading && (
                           <CircularProgress
@@ -116,7 +116,7 @@ class SignIn extends Component {
                           this.props.history.push("/session/signup")
                         }
                       >
-                        Sign up
+                        회원가입
                       </Button>
                     </div>
                     <Button
@@ -125,7 +125,7 @@ class SignIn extends Component {
                         this.props.history.push("/session/forgot-password")
                       }
                     >
-                      Forgot password?
+                      비밀번호를 잊으셨나요?
                     </Button>
                   </ValidatorForm>
                 </div>
